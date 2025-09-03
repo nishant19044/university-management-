@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:universitydb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: verySecretKeyChangeMe1234567890
+    expirationMs: 86400000
